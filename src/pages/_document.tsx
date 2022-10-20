@@ -7,7 +7,7 @@ class Document extends NextDocument<Props> {
   render() {
     return (
       <Html lang="ja">     
-      <title>コロナ感染者数観測アプリ</title>
+      <title>本田マーケット</title>
       <Head>
       <link
         rel="apple-touch-icon"
