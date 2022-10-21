@@ -1,19 +1,22 @@
+
 import jwt from "jsonwebtoken"
+import {NextApiResponse} from "next"
 import connectDB from "@/utils/database"
 import { UserModel } from "@/utils/schemaModels"
+import {ResMessageType, ExtendedNextApiRequestUser, SavedUserDataType} from "@/utils/types"
 
 const secret_key = "nextmarket"
 
-const loginUser = async(req, res) => {
+const loginUser = async(req: ExtendedNextApiRequestUser , res: NextApiResponse<ResMessageType>) => {
   try{
     await connectDB()
-    const savedUserData = await UserModel.findOne({email: req.query.email})
+    const savedUserData: SavedUserDataType | null= await UserModel.findOne({email: req.body.email})
 
 if(savedUserData){
-    if(req.query.password === savedUserData.password){
+    if(req.body.password === savedUserData.password){
 
       const payload = {
-        email: req.query.email
+        email: req.body.email
       }
       const token = jwt.sign(payload, secret_key, {expiresIn: "23h"})
       console.log(token)
