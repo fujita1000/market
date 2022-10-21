@@ -12,7 +12,7 @@ const auth = (handler: Function) => {
     }
 
 
-    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11c3lhbXVzeWEubm92ZWxAZ21haWwuY29tIiwiaWF0IjoxNjY2MjYxOTcyLCJleHAiOjE2NjYzNDQ3NzJ9.-bT5gmOHJi7bK_q1iXXqZ0i0xZYE4sGkg7oynW-ZToQ"
+    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Im11c3lhbXVzeWEubm92ZWxAZ21haWwuY29tIiwiaWF0IjoxNjY2MzQxMzU2LCJleHAiOjE2NjY0MjQxNTZ9._hJFXZJmSntsANT9jVQwvwK7AZfIw49EeKxDC8tO32k"
 
     // const token = await req.headers.authorization.split("")[1]
 

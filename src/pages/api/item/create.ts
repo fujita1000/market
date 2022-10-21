@@ -1,4 +1,4 @@
-import {NextApiRequest, NextApiResponse} from "next"
+import {NextApiResponse} from "next"
 import auth from "@/utils/auth"
 import connectDB from "@/utils/database"
 import { ItemModel } from "@/utils/schemaModels"
