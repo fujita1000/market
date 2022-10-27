@@ -1,6 +1,7 @@
 import type { NextPage, GetServerSideProps } from 'next';
 import Head from 'next/head';
 import Image from 'next/image';
+import styles from "@/styles/Delete.module.scss"
 import { ReadSingleDataType } from '@/utils/types';
 import useAuth from '@/utils/useAuth';
 
@@ -30,22 +31,23 @@ const DeleteItem: NextPage<ReadSingleDataType> = (props) => {
 
   if (loginUser === props.singleItem.email) {
     return (
-      <div>
+      <div className={styles.container}>
         <Head>
           <title>アイテム削除</title>
         </Head>
-        <h1>アイテム削除</h1>
+        <h1>アイテム削除ページ</h1>
         <form onSubmit={handleSubmit}>
-          <h2>{props.singleItem.title}</h2>
+    
           <Image
             src={props.singleItem.image}
-            width='750px'
+            width='1200px'
             height='500px'
             alt={props.singleItem.title}
-          />
+          />     
+          <h2>{props.singleItem.title}</h2>
           <h3>￥{props.singleItem.price}</h3>
           <p>{props.singleItem.description}</p>
-          <button>削除</button>
+          <button>削除ボタン</button>
         </form>
       </div>
     );

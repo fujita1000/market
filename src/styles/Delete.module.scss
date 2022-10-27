@@ -1,11 +1,232 @@
 // 共通設定
 .container {
-  width: 100%;
-  color: black;
+  width: 1200px;
+  margin: 0 auto;
+  color: black;   
+  
+  input,
+    button,
+    select,
+    textarea {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      background: transparent;
+      border: none;
+      border-radius: 0;
+      font: inherit;
+      outline: none;
+    }
+
+    h1{
+      text-align: center;
+      font-size: 3vmax;
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    h2{
+      font-size: 2.5vmax;
+      margin-top: 25px;
+            margin-bottom: 25px;
+    }
+    h3{
+            font-size: 2.5vmax;
+                  margin-bottom: 25px;
+    }
+    p{
+            font-size: 2vmax;
+                  margin-bottom: 25px;
+    }
+
+            input,
+            button,
+            select,
+            textarea {
+width: 100%;
+background-color: black;
+color: yellow;
+font-size: 3vmax;
+border-radius: 10px;
+margin-bottom: 100px;
+padding:20px;
+            }
 }
 
-@media only screen and (max-width: 900px) {}
 
-@media only screen and (max-width: 600px) {}
 
-@media only screen and (max-width: 475px) {}
+@media only screen and (max-width: 900px) {
+  // 共通設定
+    .container {
+      width: 800px;
+      margin: 0 auto;
+      color: black;
+  
+      input,
+      button,
+      select,
+      textarea {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background: transparent;
+        border: none;
+        border-radius: 0;
+        font: inherit;
+        outline: none;
+      }
+  
+      h1 {
+        text-align: center;
+        font-size: 3vmax;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+  
+      h2 {
+        font-size: 2.5vmax;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+  
+      h3 {
+        font-size: 2.5vmax;
+        margin-bottom: 25px;
+      }
+  
+      p {
+        font-size: 2vmax;
+        margin-bottom: 25px;
+      }
+  
+      input,
+      button,
+      select,
+      textarea {
+        width: 100%;
+        background-color: black;
+        color: yellow;
+        font-size: 3vmax;
+        border-radius: 10px;
+        margin-bottom: 100px;
+        padding: 20px;
+      }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    // 共通設定
+      .container {
+        width: 550px;
+        margin: 0 auto;
+        color: black;
+    
+        input,
+        button,
+        select,
+        textarea {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          background: transparent;
+          border: none;
+          border-radius: 0;
+          font: inherit;
+          outline: none;
+        }
+    
+        h1 {
+          text-align: center;
+          font-size: 3vmax;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+    
+        h2 {
+          font-size: 2.5vmax;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+    
+        h3 {
+          font-size: 2.5vmax;
+          margin-bottom: 20px;
+        }
+    
+        p {
+          font-size: 2vmax;
+          margin-bottom: 20px;
+        }
+    
+        input,
+        button,
+        select,
+        textarea {
+          width: 100%;
+          background-color: black;
+          color: yellow;
+          font-size: 3vmax;
+          border-radius: 10px;
+          margin-bottom: 100px;
+          padding: 20px;
+        }
+      }
+}
+
+@media only screen and (max-width: 475px) {
+      // 共通設定
+        .container {
+          width: 360px;
+          margin: 0 auto;
+          color: black;
+      
+          input,
+          button,
+          select,
+          textarea {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            background: transparent;
+            border: none;
+            border-radius: 0;
+            font: inherit;
+            outline: none;
+          }
+      
+          h1 {
+            text-align: center;
+            font-size: 3vmax;
+            margin-top: 15px;
+            margin-bottom: 15px;
+          }
+      
+          h2 {
+            font-size: 2.5vmax;
+            margin-top: 15px;
+            margin-bottom: 15px;
+          }
+      
+          h3 {
+            font-size: 2.5vmax;
+            margin-bottom: 15px;
+          }
+      
+          p {
+            font-size: 2vmax;
+            margin-bottom: 15px;
+          }
+      
+          input,
+          button,
+          select,
+          textarea {
+            width: 100%;
+            background-color: black;
+            color: yellow;
+            font-size: 3vmax;
+            border-radius: 10px;
+            margin-bottom: 80px;
+            padding: 15px;
+          }
+        }
+}

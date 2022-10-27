@@ -1,6 +1,7 @@
 import type { NextPage, GetServerSideProps } from 'next';
 import Head from 'next/head';
 import React, { useState } from 'react';
+import styles from "@/styles/Update.module.scss"
 import { ReadSingleDataType } from '@/utils/types';
 import useAuth from '@/utils/useAuth';
 
@@ -42,10 +43,10 @@ const UpdateItem: NextPage<ReadSingleDataType> = (props) => {
 
   if (loginUser === props.singleItem.email) {
     return (
-      <div>
+      <div className={styles.container}>
         <Head>アイテム編集</Head>
         <h1>アイテム編集</h1>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className={styles.input_container}>
           <input
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -78,7 +79,7 @@ const UpdateItem: NextPage<ReadSingleDataType> = (props) => {
             placeholder='商品説明'
             required
           />
-          <button>編集</button>
+          <button className={styles.button}>編集ボタン</button>
         </form>
       </div>
     );

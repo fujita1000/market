@@ -11,21 +11,34 @@ const ReadSingleItem: NextPage<ReadSingleDataType> = (props) => {
   return (
     <div className={styles.container}>
       <Head>{props.singleItem.title}</Head>
-      <h1>{props.singleItem.title}</h1>
-      <Image src={props.singleItem.image} alt={props.singleItem.title} width={500} height={300} />
-      <h2>値段</h2>
-      <h2>￥{props.singleItem.price}</h2>
-      <h3>商品タイトル</h3>
-      <h3>{props.singleItem.title}</h3>
-      <p>商品説明</p>
-      <p>{props.singleItem.description}</p>
-      <div>
+      <div className={styles.single_flex}>
+        <h1>{props.singleItem.title}</h1>
         <Link href={`/item/update/${props.singleItem._id}`}>
-          <a>アイテム編集</a>
+          <a className={styles.link}>アイテム編集</a>
         </Link>
         <Link href={`/item/delete/${props.singleItem._id}`}>
-          <a>アイテム削除</a>
+          <a className={styles.link}>アイテム削除</a>
         </Link>
+      </div>
+      <div className={styles.image}>
+        <Image
+          src={props.singleItem.image}
+          alt={props.singleItem.title}
+          width={1200}
+          height={500}
+        />
+      </div>
+      <div className={styles.single}>
+        <h2>値段</h2>
+        <h2>￥{props.singleItem.price}</h2>
+      </div>
+      <div className={styles.single}>
+        <h3>商品タイトル</h3>
+        <h3>{props.singleItem.title}</h3>
+      </div>
+      <div className={styles.single}>
+        <p>商品説明</p>
+        <p>{props.singleItem.description}</p>
       </div>
     </div>
   );
