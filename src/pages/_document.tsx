@@ -44,6 +44,7 @@ class Document extends NextDocument<Props> {
       <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1, width=device-width, initial-scale=1" />
       <meta name="keywords" content="コロナ ポートフォリオ" />
       <meta name="google" content="nositelinkssearchbox" />
+     <meta name="theme-color" content="yellow"/>
 
         </Head>
         <body>

@@ -10,19 +10,23 @@ const ReadAllItem: NextPage<ReadAllDataType> = (props) => {
 
   return (
     <div className={styles.container}>
-      <h1>こんにちは</h1>
-            {props.allItems.map(item => 
-        <Link href={`/item/${item._id}`} key={item._id}>
-          <a>
-            <div key={item._id}>
-              <Image src={item.image} alt={item.title} width={500} height={300} />
-              <h2>{item.price}</h2>
-              <h3>{item.title}</h3>
-              <p>{item.description}</p>
+      <h1>本田マーケット</h1>
+      <div className={styles.Card_container}>
+        {props.allItems.map((item) => (
+          <Link href={`/item/${item._id}`} key={item._id}>
+            <div className={styles.Card}>
+              <a>
+                <div key={item._id}>
+                  <Image src={item.image} alt={item.title} width={500} height={300} className={styles.image}/>
+                  <h2>￥{item.price}</h2>
+                  <h3>{item.title}</h3>
+                  <p>{item.description}</p>
+                </div>
+              </a>
             </div>
-          </a>
-        </Link>
-      )}
+          </Link>
+        ))}
+      </div>
     </div>
   );
 }

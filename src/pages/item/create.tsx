@@ -2,7 +2,9 @@ import type { NextPage } from 'next';
 import Head from 'next/head';
 import React, { useState } from 'react';
 import ImgInput from '@/components/imgInput';
+import styles from "@/styles/Create.module.scss"
 import useAuth from '@/utils/useAuth';
+
 
 const CreateItem: NextPage = () => {
   const [title, setTitle] = useState('');
@@ -38,11 +40,11 @@ const CreateItem: NextPage = () => {
 
   if (loginUser) {
     return (
-      <div>
+      <div className={styles.container}>
         <Head>アイテム作成</Head>
         <h1>アイテム作成</h1>
-        <ImgInput setImage={setImage} />
-        <form onSubmit={handleSubmit}>
+    
+        <form onSubmit={handleSubmit} className={styles.input_container}>    <ImgInput setImage={setImage} />
           <input
             value={title}
             onChange={(e) => setTitle(e.target.value)}
@@ -75,7 +77,7 @@ const CreateItem: NextPage = () => {
             placeholder='商品説明'
             required
           />
-          <button>作成</button>
+          <button className={styles.button}>作成</button>
         </form>
       </div>
     );

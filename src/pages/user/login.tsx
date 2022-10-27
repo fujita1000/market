@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 import { useState } from 'react';
+import styles from "@/styles/Login.module.scss"
 
 const Login: NextPage = () => {
   const [email, setEmail] = useState('');
@@ -27,10 +28,10 @@ const Login: NextPage = () => {
     }
   };
   return (
-    <div>
+    <div className={styles.container}>
       <Head>ログインページ</Head>
       <h1>ログイン</h1>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className={styles.input_container}>
         <input
           value={email}
           onChange={(e) => {
@@ -51,7 +52,7 @@ const Login: NextPage = () => {
           placeholder='パスワード'
           required
         ></input>
-        <button>ログイン</button>
+        <button>ログインボタン</button>
       </form>
     </div>
   );

@@ -1,3 +1,37 @@
+// 共通設定
 .container {
   width: 100%;
+  color: rgb(0, 0, 0);
+  background-color: yellow;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav{
+  display: flex;
+  align-items: center;
+    justify-content: flex-end;
+  width: 1200px;
+  margin: 0 auto;
+  font-size:2vmax;
+  li{
+    padding-right: 3%;
+  }
+  a{
+    color: rgb(0, 0, 0);
+  }
+}
+.child_nav{
+margin-right: auto;
+}
+
+@media only screen and (max-width: 475px) {
+  .container{
+      height: 60px;
+  }
+  .child_nav{
+    height: 50px;
+    width: 50px;
+  }
 }

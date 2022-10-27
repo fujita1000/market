@@ -1,0 +1,214 @@
+// 共通設定
+.container {
+  width: 100%;
+  color: black;
+h1{
+  text-align: center;
+  font-size: 3vmax;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+// input
+.input_container{
+  width: 1200px;
+  margin: 0 auto;
+      background-color: black;
+      margin-bottom: 100px;
+}
+input,
+button,
+select,
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  font: inherit;
+  outline: none;
+}
+
+/*追加スタイル*/
+
+form {
+  margin: 0 auto;
+  width: 100%;
+  padding: 30px 30px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+
+input,
+textarea {
+border: 1px solid #ddd;
+background-color: #fff;
+border-radius: 5px;
+width: 100%;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  margin-bottom: 50px;
+  height: 50px;
+}
+button{
+  font-size: 2vmax;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  margin-bottom: 50px;
+  margin-left: 10px;
+  height: 50px;
+  width: 100%;
+  background-color: yellow;
+}
+}
+
+@media only screen and (max-width: 900px) {
+  // 共通設定
+    .container {
+  
+      h1 {
+        text-align: center;
+        font-size: 3vmax;
+        margin-top: 25px;
+        margin-bottom: 25px;
+      }
+  
+      // input
+      .input_container {
+        width: 750px;
+        margin: 0 auto;
+        background-color: black;
+        margin-bottom: 80px;
+      }
+  
+  
+      input,
+      textarea {
+        border: 1px solid #ddd;
+        background-color: #fff;
+        border-radius: 5px;
+        width: 100%;
+      }
+  
+      input {
+        margin: 10px;
+        padding: 10px;
+        margin-bottom: 50px;
+        height: 50px;
+      }
+  
+      button {
+        font-size: 2vmax;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 10px;
+        height: 50px;
+        width: 100%;
+        background-color: yellow;
+      }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+      .container {
+      
+          h1 {
+            text-align: center;
+            font-size: 3vmax;
+            margin-top: 25px;
+            margin-bottom: 25px;
+          }
+      
+          // input
+          .input_container {
+            width: 530px;
+            margin: 0 auto;
+            background-color: black;
+            margin-bottom: 80px;
+          }
+      
+      
+          input,
+          textarea {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 5px;
+            width: 100%;
+          }
+      
+          input {
+            margin: 10px;
+            padding: 10px;
+            margin-bottom: 50px;
+            height: 50px;
+          }
+      
+          button {
+            font-size: 2vmax;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-bottom: 50px;
+            margin-left: 10px;
+            height: 50px;
+            width: 100%;
+            background-color: yellow;
+          }
+        }
+}
+
+@media only screen and (max-width: 475px) {
+      .container {
+      
+          h1 {
+            text-align: center;
+            font-size: 3vmax;
+            margin-top: 20px;
+            margin-bottom: 20px;
+          }
+      
+          // input
+          .input_container {
+            width: 365px;
+            margin: 0 auto;
+            background-color: black;
+            margin-bottom: 50px;
+          }
+      
+      
+          input,
+          textarea {
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 5px;
+            width: 100%;
+          }
+      
+          input {
+            margin: 10px;
+            padding: 10px;
+            margin-bottom: 30px;
+            height: 40px;
+          }
+      
+          button {
+            font-size: 2vmax;
+            color: rgb(0, 0, 0);
+            text-align: center;
+            margin-bottom: 30px;
+            margin-left: 10px;
+            height: 40px;
+            width: 100%;
+            background-color: yellow;
+          }
+        }
+}

@@ -1,3 +1,307 @@
-.container{
+// 共通設定
+.container {
   width: 100%;
+  color: black;
+  h1{
+  font-size: 3vmax;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-left: 20px;
+  }
+}
+.Card_container{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1200px;
+  gap: 5%;
+  margin-bottom: 100px;
+  margin-top: 75px;
+  overflow: hidden;
+}
+.Card{
+  width: 350px;
+  height: 400px;
+  width: 30%;
+  margin-bottom: 50px;
+  border: 3px solid rgb(0, 255, 34);
+  background-color:rgb(0, 0, 0) ;
+  border-radius: 5%;
+  box-shadow: 3px 3px 10px rgb(10, 219, 45);
+  h2{
+  font-size: 25px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  color: yellow;
+  padding: 7px;
+  
+  }
+  h3{
+font-size: 25px;
+margin-bottom: 5px;
+color: yellow;
+padding: 7px;
+  }
+  p{
+font-size: 20px;
+color: yellow;
+padding: 7px;
+  }
+  .image{
+      border-radius: 5%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+// 共通設定
+  .container {
+    width: 100%;
+    color: black;
+
+    h1 {
+      font-size: 3vmax;
+      text-align: center;
+      margin-top: 25px;
+      margin-bottom: 25px;
+      margin-left: 20px;
+    }
+  }
+
+  .Card_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 1000px;
+  gap: 5%;
+  margin-bottom: 80px;
+  margin-top: 50px;
+  overflow: hidden;
+  }
+
+  .Card {
+    width: 350px;
+    height: 400px;
+    width: 30%;
+    margin-bottom: 40px;
+    border: 3px solid rgb(122, 102, 102);
+    background-color: rgb(0, 0, 0);
+    border-radius: 5%;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+              overflow: hidden;
+
+    h2 {
+      font-size: 25px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      color: yellow;
+      padding: 7px;
+    }
+
+    h3 {
+      font-size: 25px;
+      margin-bottom: 5px;
+      color: yellow;
+      padding: 7px;
+    }
+
+    p {
+      font-size: 20px;
+      color: yellow;
+      padding: 7px;
+    }
+
+    .image {
+      border-radius: 5%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+// 共通設定
+  .container {
+    width: 100%;
+    color: black;
+
+    h1 {
+      font-size: 3vmax;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 0px;
+    }
+  }
+
+  .Card_container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    width: 720px;
+    gap: 5%;
+    margin-bottom: 60px;
+    margin-top: 40px;
+  }
+
+  .Card {
+    width: 350px;
+    height: 330px;
+    width: 30%;
+    margin-bottom: 40px;
+    border: 3px solid rgb(122, 102, 102);
+    background-color: rgb(0, 0, 0);
+    border-radius: 5%;
+    box-shadow: 3px 3px 3px rgb(0, 0, 0);
+    overflow: hidden;
+
+    h2 {
+      font-size: 20px;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      color: yellow;
+      padding: 5px;
+    }
+
+    h3 {
+      font-size: 20px;
+      margin-bottom: 5px;
+      color: yellow;
+      padding: 5px;
+    }
+
+    p {
+      font-size: 16px;
+      color: yellow;
+      padding: 5px;
+    }
+
+    .image {
+      border-radius: 5%;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  // 共通設定
+    .container {
+      width: 100%;
+      color: black;
+  
+      h1 {
+        font-size: 3vmax;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        margin-left: 0px;
+      }
+    }
+  
+    .Card_container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 auto;
+      width: 520px;
+      gap: 5%;
+      margin-bottom: 60px;
+      margin-top: 40px;
+    }
+  
+    .Card {
+      width: 350px;
+      height: 300px;
+      width: 46%;
+      margin-bottom: 40px;
+      border: 3px solid rgb(122, 102, 102);
+      background-color: rgb(0, 0, 0);
+      border-radius: 5%;
+      box-shadow: 3px 3px 3px rgb(0, 0, 0);
+      overflow: hidden;
+  
+      h2 {
+        font-size: 16px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        color: yellow;
+        padding: 5px;
+      }
+  
+      h3 {
+      font-size: 16px;
+        margin-bottom: 5px;
+        color: yellow;
+        padding: 5px;
+      }
+  
+      p {
+    font-size: 16px;
+        color: yellow;
+        padding: 5px;
+      }
+  
+      .image {
+        border-radius: 5%;
+      }
+    }
+}
+
+@media only screen and (max-width: 475px) {
+    // 共通設定
+      .container {
+        width: 100%;
+        color: black;
+    
+        h1 {
+          font-size: 3vmax;
+          text-align: center;
+          margin-top: 15px;
+          margin-bottom: 15px;
+          margin-left: 0px;
+        }
+      }
+    
+      .Card_container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 350px;
+        gap: 5%;
+        margin-bottom: 50px;
+        margin-top: 30px;
+      }
+    
+      .Card {
+        width: 350px;
+        height: 350px;
+        width: 100%;
+        margin-bottom: 40px;
+        border: 3px solid rgb(122, 102, 102);
+        background-color: rgb(0, 0, 0);
+        border-radius: 5%;
+        box-shadow: 3px 3px 3px rgb(0, 0, 0);
+        overflow: hidden;
+    
+        h2 {
+          font-size: 16px;
+          margin-top: 0px;
+          margin-bottom: 0px;
+          color: yellow;
+          padding: 5px;
+        }
+    
+        h3 {
+          font-size: 16px;
+          margin-bottom: 5px;
+          color: yellow;
+          padding: 5px;
+        }
+    
+        p {
+          font-size: 14px;
+          color: yellow;
+          padding: 5px;
+        }
+    
+        .image {
+          border-radius: 5%;
+        }
+      }
 }

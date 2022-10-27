@@ -1,3 +1,28 @@
+// 共通設定
 .container {
   width: 100%;
+  color: yellow;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+}
+.footer{
+  font-size: 1.3vmax;
+  text-align: center;
+}
+
+@media only screen and (max-width: 900px) {}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 35px;
+      }
+    }
+
+@media only screen and (max-width: 475px) {
+  .container {
+      height: 30px;
+    }
 }
