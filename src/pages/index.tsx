@@ -1,15 +1,17 @@
-import type { NextPage } from 'next'
+import type { NextPage, GetServerSideProps } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from "next/link"
 import styles from '../styles/Home.module.scss'
+import {ReadAllDataType} from "@/utils/types"
 
-const ReadAllItem: NextPage = (props) => {
+
+const ReadAllItem: NextPage<ReadAllDataType> = (props) => {
 
   return (
     <div className={styles.container}>
       <h1>こんにちは</h1>
-      {props.allItems.map((item) => (
+            {props.allItems.map(item => 
         <Link href={`/item/${item._id}`} key={item._id}>
           <a>
             <div key={item._id}>
@@ -20,17 +22,19 @@ const ReadAllItem: NextPage = (props) => {
             </div>
           </a>
         </Link>
-      ))}
+      )}
     </div>
   );
 }
 
 export default ReadAllItem;
 
-export const getServerSideProps = async() => {
+export const getServerSideProps: GetServerSideProps<ReadAllDataType> = async() => {
   const response = await fetch("http://localhost:3000/api/item/readall")
   const allItems = await response.json();
   return{
     props: allItems
   }
 }
+
+// }t37afwgq
