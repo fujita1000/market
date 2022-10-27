@@ -1,12 +1,11 @@
 import type { NextPage, GetServerSideProps } from 'next'
-import Head from 'next/head'
 import Image from 'next/image'
 import Link from "next/link"
 import styles from '../styles/Home.module.scss'
 import {ReadAllDataType} from "@/utils/types"
 
 
-const ReadAllItem: NextPage<ReadAllDataType> = (props) => {
+const ReadAllItem: NextPage = (props) => {
 
   return (
     <div className={styles.container}>
