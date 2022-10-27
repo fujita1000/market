@@ -85,5 +85,5 @@ export interface ReadAllDataType {
     price: string
     description: string
     email: string
-  }
+  }[]
 }
