@@ -51,7 +51,7 @@ gsap.to("#Card",{
 export default ReadAllItem;
 
 export const getServerSideProps: GetServerSideProps<ReadAllDataType> = async() => {
-  const response = await fetch("https://portfolio-honda-market.vercel.app//api/item/readall")
+  const response = await fetch("http://localhost:3000/api/item/readall")
   const allItems = await response.json();
   return{
     props: allItems

@@ -10,7 +10,7 @@ const DeleteItem: NextPage<ReadSingleDataType> = (props) => {
     e.preventDefault();
     try {
       const response = await fetch(
-        `https://portfolio-honda-market.vercel.app//api/item/delete/${props.singleItem._id}`,
+        `http://localhost:3000/api/item/delete/${props.singleItem._id}`,
         {
           method: 'POST',
           headers: {
@@ -59,7 +59,7 @@ const DeleteItem: NextPage<ReadSingleDataType> = (props) => {
 export default DeleteItem;
 
 export const getServerSideProps: GetServerSideProps<ReadSingleDataType> = async (context) => {
-  const response = await fetch(`https://portfolio-honda-market.vercel.app//api/item/${context.query.id}`);
+  const response = await fetch(`http://localhost:3000/api/item/${context.query.id}`);
   const singleItem = await response.json();
   return {
     props: singleItem,
