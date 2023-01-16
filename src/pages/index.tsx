@@ -10,18 +10,17 @@ import {ReadAllDataType} from "@/utils/types"
 
 
 
-
-
 const ReadAllItem: NextPage<ReadAllDataType> = (props) => {
   useEffect(() => {
     gsap.set('#Card', {
       duration: 2,
-  x:-500
+      opacity: 0,
+      x: -50,
     });
 gsap.to("#Card",{
-  duration: 2,
+  duration: 0.8,
   opacity:1,
-  x:0
+  x:0,
 })
 
   }, []);
